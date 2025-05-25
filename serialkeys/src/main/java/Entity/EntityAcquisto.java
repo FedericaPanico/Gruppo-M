@@ -1,22 +1,24 @@
 package Entity;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 public class EntityAcquisto {
     private int idAcquisto;
-    // private data dataAcquisto;
+    private Date dataAcquisto;
     private String nomeApplicazione;
     private int numCodici;
     private String emailDestinazione;
     private ArrayList<EntityCodice> codiciAcquistati;
     private String nomeUtente;
     
-    private EntityCodice cd;
-    private EntityClienteRegistrato cr;
+    //private EntityCodice cd;
+    //private EntityClienteRegistrato cr;
     
-    public EntityAcquisto(int idAcquisto, String nomeApplicazione, int numCodici, String emailDestinazione, ArrayList<EntityCodice> codiciAcquistati, String nomeUtente) {
+    public EntityAcquisto(int idAcquisto, Date dataAcquisto, String nomeApplicazione, int numCodici, String emailDestinazione, ArrayList<EntityCodice> codiciAcquistati, String nomeUtente) {
         super();
         this.idAcquisto = idAcquisto;
+        this.dataAcquisto = dataAcquisto;
         this.nomeApplicazione = nomeApplicazione;
         this.numCodici = numCodici;
         this.emailDestinazione = emailDestinazione;
@@ -31,6 +33,14 @@ public class EntityAcquisto {
 
     public void setIdAcquisto(int idAcquisto) {
         this.idAcquisto = idAcquisto;
+    }
+    
+    public Date getDataAcquisto() {
+        return dataAcquisto;
+    }
+    
+    public void setDataScadenza(Date dataAcquisto) {
+        this.dataAcquisto = dataAcquisto;
     }
     
     public String getNomeApplicazione() {

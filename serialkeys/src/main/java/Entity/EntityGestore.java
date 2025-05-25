@@ -1,13 +1,30 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Entity;
 
-/**
- *
- * @author feder
- */
 public class EntityGestore {
+    private String idGestore;
+    private String password;
+    
+    public EntityGestore(String idGestore, String password) {
+        super();
+        this.idGestore = idGestore;
+        this.password = password;
+    }
+    
+    
+    public String getIdGestore() {
+        return idGestore;
+    }
+
+    public void setIdGestore(String idGestore) {
+        this.idGestore = idGestore;
+    }
+    
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
     
 }

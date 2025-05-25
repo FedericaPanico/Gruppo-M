@@ -1,22 +1,23 @@
 package Entity;
 
+import java.util.Date;
+
 //import database.BigliettoDAO;
 //import exception.DAOException;
 //import exception.DBConnectionException;
 
 public class EntityCodice {
     private String idCodice;
-    //private data DataScadenza;
+    private Date dataScadenza;
     private boolean validità;
     private boolean disponibilità;
     private float prezzo;
     private String nomeApplicazione;
-    private String idGestore; 
     private int idAcquisto;
 
-    private EntityApplicazione app;
-    private EntityGestore gst;
-    private EntityAcquisto acq;
+    //private EntityApplicazione app;
+    //private EntityGestore gst;
+    //private EntityAcquisto acq;
 
 //	public EntityBiglietto(int idBiglietto, float costo, int numPosto, int idProiezione, int idCliente) {
 //		super();
@@ -27,14 +28,14 @@ public class EntityCodice {
 //		this.cln = new EntityClienteRegistrato(idCliente);
 //	}
 
-    public EntityCodice(String idCodice, boolean validità, boolean disponibilità, float prezzo, String nomeApplicazione, String idGestore, int idAcquisto) {
+    public EntityCodice(String idCodice, Date dataScadenza, boolean validità, boolean disponibilità, float prezzo, String nomeApplicazione, int idAcquisto) {
         super();
         this.idCodice = idCodice;
+        this.dataScadenza = dataScadenza;
         this.validità = validità;
         this.disponibilità = disponibilità;
         this.prezzo = prezzo;
         this.nomeApplicazione = nomeApplicazione;
-        this.idGestore = idGestore;
         this.idAcquisto = idAcquisto;
     }
 
@@ -45,6 +46,14 @@ public class EntityCodice {
 
     public void setIdCodice(String idCodice) {
         this.idCodice = idCodice;
+    }
+    
+    public Date getDataScadenza() {
+        return dataScadenza;
+    }
+    
+    public void setDataScadenza(Date dataScadenza) {
+        this.dataScadenza = dataScadenza;
     }
 
     public boolean getValidità() {
@@ -77,14 +86,6 @@ public class EntityCodice {
 
     public void setNomeApplicazione(String nomeApplicazione) {
         this.nomeApplicazione = nomeApplicazione;
-    }
-
-    public String getIdGestore() {
-        return idGestore;
-    }
-
-    public void setIdGestore(String idGestore) {
-        this.idGestore = idGestore;
     }
 
     public int getIdAcquisto() {

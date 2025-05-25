@@ -1,17 +1,20 @@
 package Entity;
 
+import java.util.Date;
+
 public class EntityCartaDiCredito {
     private String nomeProprietario;
     private String cognomeProprietario;
     private long numero;
-    // private data DataScadenza;
+    private Date dataScadenza;
     private int codiceCVC;
     
-    public EntityCartaDiCredito(String nomeProprietario, String cognomeProprietario, long numero, int codiceCVC) {
+    public EntityCartaDiCredito(String nomeProprietario, String cognomeProprietario, long numero, Date dataScadenza, int codiceCVC) {
         super();
         this.nomeProprietario = nomeProprietario;
         this.cognomeProprietario = cognomeProprietario;
         this.numero = numero;
+        this.dataScadenza = dataScadenza;
         this.codiceCVC = codiceCVC;
     }
     
@@ -38,6 +41,14 @@ public class EntityCartaDiCredito {
     
     public void setNumero(long numero) {
         this.numero = numero;
+    }
+    
+    public Date getDataScadenza() {
+        return dataScadenza;
+    }
+    
+    public void setDataScadenza(Date dataScadenza) {
+        this.dataScadenza = dataScadenza;
     }
     
     public int getCodiceCVC() {
