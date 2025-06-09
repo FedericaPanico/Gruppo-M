@@ -1,9 +1,9 @@
 Report settimanale
-Da: 2025-06-02
-A: 2025-06-08
+Da: 2025-06-09
+A: 2025-06-15
 [EduKids] Codici venduti: 0 - Codici scaduti: 0
-[FitApp] Codici venduti: 1 - Codici scaduti: 0
-[Foodie] Codici venduti: 0 - Codici scaduti: 0
+[FitApp] Codici venduti: 0 - Codici scaduti: 0
+[Foodie] Codici venduti: 2 - Codici scaduti: 0
 [LangBoost] Codici venduti: 0 - Codici scaduti: 0
 [MoneySafe] Codici venduti: 0 - Codici scaduti: 0
 [NotePro] Codici venduti: 0 - Codici scaduti: 0
