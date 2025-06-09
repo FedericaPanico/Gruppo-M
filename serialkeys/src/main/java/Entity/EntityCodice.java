@@ -15,19 +15,6 @@ public class EntityCodice {
     private String nomeApplicazione;
     private int idAcquisto;
 
-    //private EntityApplicazione app;
-    //private EntityGestore gst;
-    //private EntityAcquisto acq;
-
-//	public EntityBiglietto(int idBiglietto, float costo, int numPosto, int idProiezione, int idCliente) {
-//		super();
-//		this.idBiglietto = idBiglietto;
-//		this.costo = costo;
-//		this.numPosto = numPosto;
-//		this.prz = new EntityProiezione(idProiezione);
-//		this.cln = new EntityClienteRegistrato(idCliente);
-//	}
-
     public EntityCodice(String idCodice, Date dataScadenza, boolean validità, boolean disponibilità, float prezzo, String nomeApplicazione, int idAcquisto) {
         super();
         this.idCodice = idCodice;
@@ -37,6 +24,21 @@ public class EntityCodice {
         this.prezzo = prezzo;
         this.nomeApplicazione = nomeApplicazione;
         this.idAcquisto = idAcquisto;
+    }
+    
+    public EntityCodice(String idCodice, Date dataScadenza, boolean validità, boolean disponibilità, float prezzo, String nomeApplicazione) {
+        super();
+        this.idCodice = idCodice;
+        this.dataScadenza = dataScadenza;
+        this.validità = validità;
+        this.disponibilità = disponibilità;
+        this.prezzo = prezzo;
+        this.nomeApplicazione = nomeApplicazione;
+    }
+    
+    public EntityCodice(String idCodice) {
+        super();
+        this.idCodice = idCodice;
     }
 
 

@@ -10,12 +10,21 @@ public class EntityApplicazione {
     private String categoria;
     private ArrayList<EntityCodice> codiciAssociati;
  
-    public EntityApplicazione(String nome, Date dataRilascio, String produttore, String categoria, ArrayList<EntityCodice> codiciAssociati){
+    public EntityApplicazione(String nome, Date dataRilascio, String produttore, String categoria){
         this.nome = nome;
         this.dataRilascio = dataRilascio;
         this.produttore = produttore;
         this.categoria = categoria;
-        this.codiciAssociati = codiciAssociati;
+        this.codiciAssociati = new ArrayList<EntityCodice>();
+    }
+    
+    // costruttore per il metodo readListaApplicazioni in ApplicazioneDAO
+    public EntityApplicazione(String nome) {
+        this.nome = nome;
+        this.dataRilascio = null;
+        this.produttore = null;
+        this.categoria = null;
+        this.codiciAssociati = new ArrayList<EntityCodice>();
     }
  
     

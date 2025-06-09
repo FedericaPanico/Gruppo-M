@@ -39,7 +39,7 @@ public class EntityAcquisto {
         return dataAcquisto;
     }
     
-    public void setDataScadenza(Date dataAcquisto) {
+    public void setDataAcquisto(Date dataAcquisto) {
         this.dataAcquisto = dataAcquisto;
     }
     

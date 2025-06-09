@@ -3,7 +3,7 @@ package Entity;
 import java.util.ArrayList;
 
 public class EntityClienteRegistrato {
-    // private int idClienteRegistrato;
+    private String idClienteRegistrato;
     private String nomeUtente;
     private String password;
     private String indirizzoEmail;
@@ -17,8 +17,9 @@ public class EntityClienteRegistrato {
     }
     */
 
-    public EntityClienteRegistrato(String nomeUtente, String password, String indirizzoEmail, EntityCartaDiCredito cartaDiCredito, ArrayList<EntityAcquisto> acquisti) {
+    public EntityClienteRegistrato(String idClienteRegistrato, String nomeUtente, String password, String indirizzoEmail, EntityCartaDiCredito cartaDiCredito, ArrayList<EntityAcquisto> acquisti) {
         super();
+        this.idClienteRegistrato = idClienteRegistrato;
         this.nomeUtente = nomeUtente;
         this.password = password;
         this.indirizzoEmail = indirizzoEmail;
@@ -26,6 +27,13 @@ public class EntityClienteRegistrato {
         this.acquisti = acquisti;
     }
     
+    public String getIdClienteRegistrato() {
+        return idClienteRegistrato;
+    }
+    
+    public void setIdClienteRegistrato(String idClienteRegistrato) {
+        this.idClienteRegistrato = idClienteRegistrato;
+    }
     
     public String getNomeUtente() {
         return nomeUtente;

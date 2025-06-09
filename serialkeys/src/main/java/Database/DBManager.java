@@ -14,8 +14,7 @@ private static Connection conn = null;
     public static Connection getConnection() throws SQLException {
 
         if(conn == null || conn.isClosed()) {
-//          conn = DriverManager.getConnection("jdbc:h2:./gestioneCinema", "sa", "");
-//          conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/gestioneCinema", "root", "");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/gestioneSerialKeys", "root", "");
         }
 
         return conn;
